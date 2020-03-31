@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{CODE}
+Github repository of the project.
+\newblock \url{https://github.com/oriolborrellroig/ADM-FirstDelivery}.
+
+\bibitem{QDP}
+Quick draw project by google.
+\newblock \url{https://quickdraw.withgoogle.com/}.
+
+\bibitem{QDL}
+Creative commons license.
+\newblock \url{https://creativecommons.org/licenses/by/4.0/}.
+
+\bibitem{GCP}
+Google cloud platform.
+\newblock
+  \url{https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/raw}.
+
+\bibitem{KNN}
+Scikit learn $k$-nn classifier api.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html}.
+
+\end{thebibliography}
