@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.19)  4 APR 2020 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.19)  4 APR 2020 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,25 +443,26 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 95.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
- [1
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./img/epochs_accuracy.pdf, id=58, 393.60803pt x 278.34865pt>
+<./img/epochs_accuracy.pdf, id=52, 393.60803pt x 278.34865pt>
 File: ./img/epochs_accuracy.pdf Graphic file (type pdf)
 <use ./img/epochs_accuracy.pdf>
 Package pdftex.def Info: ./img/epochs_accuracy.pdf  used on input line 144.
 (pdftex.def)             Requested size: 231.2979pt x 163.57019pt.
-<./img/epochs_loss.pdf, id=59, 393.60803pt x 278.34865pt>
+<./img/epochs_loss.pdf, id=53, 393.60803pt x 278.34865pt>
 File: ./img/epochs_loss.pdf Graphic file (type pdf)
 <use ./img/epochs_loss.pdf>
 Package pdftex.def Info: ./img/epochs_loss.pdf  used on input line 150.
 (pdftex.def)             Requested size: 231.2979pt x 163.57019pt.
+ [2]
 <./img/1.png, id=63, 75.28125pt x 50.1875pt>
 File: ./img/1.png Graphic file (type png)
 <use ./img/1.png>
@@ -511,15 +512,15 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 10389 strings out of 492616
- 156626 string characters out of 6129481
+ 10390 strings out of 492616
+ 156635 string characters out of 6129481
  276255 words of memory out of 5000000
- 14176 multiletter control sequences out of 15000+600000
+ 14177 multiletter control sequences out of 15000+600000
  10864 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,40p,698b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf" (4 pages, 188136 bytes).
+Output written on "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf" (4 pages, 188199 bytes).
 PDF statistics:
  195 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
