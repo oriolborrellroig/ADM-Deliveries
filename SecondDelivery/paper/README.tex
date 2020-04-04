@@ -13,7 +13,7 @@
 \usepackage{listings}
 \usepackage[left=2.5cm, right=2.5cm, top=1.5cm, bottom=2cm]{geometry}
 \setcounter{section}{-1}
-\setlength\parindent{0pt}
+
 
 \title{
 \textbf{Algorithmics for Data Mining: Deliverable 1\\} \Large{
@@ -30,106 +30,16 @@
 
 \section{Abstract}
 \textit{
-In this project we have trained a model\cite{CODE} in order to classify handwritten images within a given categories. In this essay we will focus on the main CRISP-CM methodology steps that were taken into account when developing the project, while showing and explaining the obtained results.
+In this project we have trained a model \footnote{Github repository of the project: \url{https://github.com/oriolborrellroig/ADM-FirstDelivery}} in order to classify handwritten images within a given categories. In the last essay we focused on on the preprocessing, we thought for a easy solution to deal with outliers, and finally we built a KNN model in order to classify the images, obtaining a accuracy of 0.7 (with two categories). In this delivery we will increase the number of categories. We also will search for a model that obtains a better accuracy than a KNN.
 }
 
-\section{Problem Understanding}
-In this project we will define two different types of goals: The problem goal and the data mining goal. The data mining goal is clear: perform a model that let us classify a drawing in one of the given categories. We will consider acceptable a model with an accuracy bigger than 0.5.
-
-Although the data mining is a very important part of the project, being able to predict the category with a certain accuracy is not the main goal of the project. The principal objective is to practice with the CRISP-DM methodology and understand it's main characteristics. The performance of this article will be proof of success.
-
-\section{Data Understanding}
-The data used will be obtained from the Quick Draw\cite{QDP} project, by Google. This dataset has millions of drawings organized in the different categories that each represent. This is an open source dataset create by Google, Inc. under the Creative Commons Attribution 4.0 International license\cite{QDL} so there are no legal problems when using this data.
-
-The data is downloaded from the Google Cloud Platform\cite{GCP}. The original dataset contains around 50 million hand-written drawings classified in 345 categories depending on what the drawing represents. When defining the project to the teacher we accord to use for this first delivery only 2 categories, with aproximately 10.000 drawings each.
-
-\subsection{Data Description}
-\label{sec:Data_Description}
-The data for each category is downloaded separately. The data is stored in \textit{.ndjson} file, where each row represents a drawing. Each drawing contains the following information:
-\begin{itemize}
-    \setlength\itemsep{0.05em}
-    \item \textbf{Key\_id:} A unique identifier across all drawings
-    \item \textbf{Word:} Category the player was prompted to draw. In our project, this attribute can only have the following 2 values: ambulance or angel.
-    \item \textbf{Countrycode:} A two letter country code of where the player was located.
-    \item \textbf{Timestamp:} When the drawing was created.
-    \item \textbf{Recognized:} Boolean representing whether the word was recognized by the game.
-    \item \textbf{Drawing:}  A JSON array representing the vector drawing, represented with strokes.
-\end{itemize}
-
-\subsection{Data Exploration}
-In the original dataset, each category contained around 100.000 drawings. As we will use much less than that, whe had to select the data we will us to train and test the model. This selection criteria is explained in Section \ref{sec:Data_Preparation}: Data Preparation.
-
-Once we had our data, the first thing I did is to try to understand how data is distributed for \textit{Word}, and \textit{Countrycode} attributes. In Figure \ref{fig:Category-Attribute} is shown the number of appearances of each category. In Figure \ref{fig:Countrycodes-Attribute} the percentage of countries where the draw was made. It's important to mention that the 'Others' section in Figure \ref{fig:Countrycodes-Attribute} is composed by 99 countries where its percentage is no grader than 1\%.
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{.45\textwidth}
-      \centering
-      \includegraphics[width=.95\textwidth]{./img/Category.png}
-      \caption{Category Attribute.}
-      \label{fig:Category-Attribute}
-    \end{subfigure}
-    \begin{subfigure}{.45\textwidth}
-        \centering
-        \includegraphics[width=0.95\textwidth]{./img/Country.png}
-        \caption{Countrycodes Attribute.}
-        \label{fig:Countrycodes-Attribute}
-    \end{subfigure}
-    \caption{Data Exploration}
-    \label{fig:PCA}
-\end{figure}
-In Figure \ref{fig:Category-Attribute} we can appreciate that we have a balanced dataset. We cannot conclude the same in Figure \ref{fig:Countrycodes-Attribute}. We can see that most of the drawings are made in USA (43.6\%), being followed by GB (7.2\%). If we find that there's a correlation between the country code and the way people draw, this unbalance could affect to our model. For simplification of the problem we will suppose there's no correlation. About completeness of the data, we found that there are no nulls in the whole dataset. Moreover, each column has all the data in a correct format.
-
-\subsection{Visualitzation}
-In order to better understand the drawings we performed a Principal Component Analysis (PCA). PCA is an unsupervised learning algorithm as it ignores the class labels (the so-called principal components) that maximize the variance in a dataset, to find the directions.
-
-In the first iteration we obtained the Figure \ref{fig:PCA_outliers}. The only conclusion possible was that we had some outliers that could make decrease the accuracy of our model. We deleted those drawings in section \ref{sec:Data_Selection}: Data Selection.
-
-After removing those outliers we obtained Figure \ref{fig:PCA_no_outliers}. In this image we can clearly identify both classes: The yellow one represents the $angel$ category, and its located in the positive side of the first principal component. In the negative side of the first principal component we have the $ambulance$ images. Also, we observe that the $ambulance$ is more disperse than $angel$, and this could mean more variability in the drawings.
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{.49\textwidth}
-      \centering
-      \includegraphics[width=1\textwidth]{./img/PCA_outliers.png}
-      \caption{PCA with outliers.}
-      \label{fig:PCA_outliers}
-    \end{subfigure}
-    \begin{subfigure}{.49\textwidth}
-        \centering
-        \includegraphics[width=1\textwidth]{./img/PCA_no_outliers.png}
-        \caption{PCA without outliers.}
-        \label{fig:PCA_no_outliers}
-    \end{subfigure}
-    \caption{Principal Component Analysis.}
-    \label{fig:PCA}
-\end{figure}
-
-\section{Data Preparation}
-\label{sec:Data_Preparation}
-As we commented previously, the original dataset had no null values and mostly all the values were in a correct format. In this section we mainly focused in solving two problems: Selecting the data that we will use in the project, and converting the Drawing JSON array into an array in order to apply different models.
-
-\subsection{Data Selection}
-\label{sec:Data_Selection}
-The main problem we had is that the original dataset contained a huge amount of data, that could not be computed in a reasonable time. To solve this problem we simplified the problem reducing the number of categories. As mentioned  in Section \ref{sec:Data_Description}, we selected the following ones: $ambulance$ and $angel$.
-
-For this categories we downloaded the whole dataset, and created a script that selected randomly around 10.000 each. Those categories that had more rows in the original dataset will have more rows in ours.
-
-The second problem we faced was that once performed the PCA, we realized we had some outliers that we wanted to erase. In order to delete them, we modified the selection script, including that all the rows selected must be recognized by the Google's algorithm (recognized attribute is \textit{True}). We are aware that this is not the best solution. It's the one that was accorded with the teacher in order to avoid too much complexity for this first deliverable. Detecting outliers could be the scope for future deliveries.
-
-\subsection{Data Formating}
-\label{sec:Data_Formating}
-We performed two main changes with respect the original database. The easiest one was to convert the \textit{Word} attribute into numeric. The second change was to transform the JSON array for the images into a array that could be computed.
-
-In order to do so, the plotted each image and save it as a \textit{.png} of size $150 \times 100$ pixels. We reduced that much the image for space and computation limitations. Once we had the image we transform it into a bitmap. Finally we transformed each bitmap into an array where each value represents the grey-scale value of the pixel, as the model requires.
-
-\section{Modeling} 
+\section{Introduction}
 \label{Modeling}
-Once we had the data ready we applied our model: $k$-NN\cite{KNN}. Before applying any model we divided our data into train and test data (75\% - 25\%). To validate our models, we randomly selected 448 new rows in the original dataset for each category and applied them the same preprocessing steps mentioned previously.
+In order to train our models, we will need to prepossess the new data. We used in the preprocessing the exact same steps explained n the first delivery. The only change is that now we are using 5 categories, containing around 5000 drawings each. Take into account that once discarded the outliers, the number of drawings will be reduced. 
 
-The $k$-NN ($k$-Nearest Neighbors) algorithm applies a really simple idea: the algorithm classifies each new sample in the corresponding group, according to $k$ neighbors closer to one group or another. It calculates the distance of the new element to each of the existing ones, and orders those distances from least to greatest to select the group to which they belong.
-
-The first thing we did is to find the $k$ that give us a better accuracy. We tried all the odd values from $1$ to $30$. Table \ref{tab:knn_results} shows the obtained values:
+\section{k-Nearest Neighbors (KNN)} 
+\label{KNN}
+Once we had the data ready we splitted our data in into train and test data (75\%-25\%). Afterwords, we tried to find the $k$ that give us a better accuracy. We tried all the odd values from $1$ to $30$. Table \ref{tab:knn_results} shows the obtained values:
 
 \begin{table}[ht]
     \centering
@@ -137,50 +47,188 @@ The first thing we did is to find the $k$ that give us a better accuracy. We tri
         \hline
         \textbf{k} & \textbf{accuracy}  \\
         \hline
-        1 & 55.16\% \\
+        1 & 18.59\% \\
         \hline
-        3 & 51.89\% \\
+        3 & 19.34\% \\
         \hline
-        5 & 52.02\% \\
+        5 & 20.38\% \\
         \hline
-        7 & 53.18\% \\
+        7 & 25.58\% \\
         \hline
-        \textbf{9} & \textbf{81.88\%} \\
+        9 & 26.49\% \\
         \hline
-        11 & 81.42\% \\
+        11 & 27.94\% \\
         \hline
-        13 & 79.12\% \\
+        13 & 27.53\% \\
         \hline
-        15 & 77.79\% \\
+        15 & 28.03\% \\
         \hline
-        17 & 75.55\% \\
+        17 & 31.32\% \\
         \hline
-        19 & 74.89\% \\
+        19 & 32.86\% \\
         \hline
-        21 & 73.94\% \\
+        21 & 33.43\% \\
         \hline
-        23 & 72.79\% \\
+        23 & 33.52\% \\
         \hline
-        25 & 71.77\% \\
+        25 & 33.89\% \\
         \hline
-        27 & 71.23\% \\
+        27 & 33.43\% \\
         \hline
-        29 & 70.98\% \\
+        \textbf{29} & \textbf{34.27\%} \\
         \hline
     \end{tabular}
     \caption{Accuracy obtained respect $k$}
     \label{tab:knn_results}
 \end{table}
 
-As the higher accuracy was obtained with $k=9$, we used this value to build our model. We re-trained the classifier and tried to predict the drawings that we reserved for validation. We got an accuracy of \textbf{0.710}. Taking into account that trying to predict the category randomly we would had an accuracy of 0.500, is an improvement, but not the improvement that we expected. In futures deliverables we could search for a model that works better with images, like Convolutional Neural Network (CNN).
+As the higher accuracy was obtained with $k=29$, we used this value to build our model. We re-trained the classifier and tried to predict the drawings that we reserved for validation. We got an accuracy of 0.3427. As it happened in the previous delivery, we obtain a better prediction that we would obtain flipping a coin (0.2). However, this accuracy is not enough. After a bit of research, I found that Convolutional Neural Networks (CNN) are very good for predicting images. In the following section we will try to increase the accuracy with a CNN.
 
-\section{Evaluation}
+\section{Convolutional Neural Networks (CNN)}
+\label{CNN}
 
-The results obtained gave us an improvement comparing it with "flipping a coin" to predict the category. However, the accuracy obtained is not the one that we expected. As we mentioned this could be mainly for two reasons: The first one is that we find a god way to detect outliers, but it can be improved. The second one is because $k$-NN is not the best model to treat with images. This two points can be solved in future deliverables.
+A Convolutional Neural Network (CNN) is a specific type of artificial neural network that has some hidden layers called convolutional layers, where the transformation is made in this layer is a convolutional operation. CNNs is widely used to do image recognition, image classifications, objects detections, faces recognition etc., that's the reason I choosed this algorithm.
 
-We have to take into account that obtaining a high accuracy was not the main goal of the project. In this essay we described all the important things we have taken into account in order to build a classifier for each phase of the CRISP methodology. We discussed from the legality to use the data, to the characteristics of the model, going through our considerations in data understanding and data preprocessing, for example. The discussion of each step and, after iterating several times in the methodology, we can affirm that our level is much more higher than it was. We set a good basis to work in future deliverables, explaining the things that could be improved in future steps. With the completion of this essay we conclude the main objective of this first deliverable.
+The model type that was used was Sequential. It allows you to build a model layer by layer. In our model we will use the following type of layers:
 
-\bibliography{references}{}
-\bibliographystyle{unsrt}
+\begin{itemize}
+    \item \textbf{Conv2D:} This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs.
+    \item \textbf{MaxPool2D:} Takes the maximum value of the kernel to reduce the number of parameters.
+    \item \textbf{SpatialDropout2D:} We randomly set entire kernel to 0. So we will drop them, in order to prevent for overfiting.
+    \item \textbf{Flatten:} It reduces the dimension of the data into 1 dimension.
+    \item \textbf{Dropout:}It randomly turn off neurons in order to reduce overfitting.
+    \item \textbf{Dense:} We take the dimension created in the flattern layer and convert it into the category to predict.
+    
+\end{itemize}
+ 
+The following table shows the CNN i designed:
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|ccc|}
+        \hline
+        \textbf{Layer(type)} & \textbf{Units} & \textbf{Filter} & \textbf{Stride} \\
+        \hline
+        Conv2D & 8 & 5 & 2 \\ \hline
+        Conv2D & 32 & 3 & 1\\ \hline
+        MaxPool2D & - & 3 & 2\\ \hline
+        SpatialDropout2D & - & - & -\\ \hline
+
+        Conv2D & 64 & 3 & 2\\ \hline
+        Conv2D & 64 & 3 & 1\\ \hline
+        MaxPool2D & - & 3 & 2\\ \hline
+        SpatialDropout2D & - & - & -\\ \hline
+
+        Conv2D & 128 & 1 & 1\\ \hline
+        Conv2D & 128 & 1 & 1\\ \hline
+        Conv2D & 128 & 1 & 1\\ \hline
+        SpatialDropout2D & - & - & -\\ \hline
+
+        Flatten & - & - & -\\ \hline
+        Dropout & - & - & -\\ \hline
+        Dense & 5 & - & -\\ \hline
+
+    \end{tabular}
+    \caption{Accuracy obtained respect $k$}
+    \label{tab:knn_results}
+\end{table}
+
+When we built the model we tried allot of possibles parametritzations for the number of nodes in each Conv2D layer. Finaly, in the first set of layers we have 8 nodes, and 32, tn the second one two layers of 64 nodes, and in the third one three layers of 128 nodes. This are the number of nodes that made us reach the higher accuracy. Another parametrization we choosed was the kernel size, the size of the filter matrix for our convolution. We decided to create $3 \times 3$ size filter matrix, except in the first layer, that will be a $5 \times 5$ matrix, and in the last set of Conv2D layers.
+
+We also had to define the number of \textit{epochs} (number of times we train the model with the same training/testing data) we will perform. If we set a low number of epochs our model could not be enough trained. If we set a big number of epochs, our model could be overfitted. In both cases the accuracy will decrease, so the number of epochs important.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.49\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{./img/epochs_accuracy.pdf}
+      \caption{Accuracy in each epoch}
+      \label{fig:EpochAccuracy}
+    \end{subfigure}
+    \begin{subfigure}{.49\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{./img/epochs_loss.pdf}
+        \caption{Loss in each epoch}
+        \label{fig:EpochLoss}
+    \end{subfigure}
+    \caption{Evaloation of epochs}
+    \label{fig:EvaloationOfEpochs}
+\end{figure}
+
+So we first built the model with 50 epochs, and plotted the acuracy and lost values of each one. In Figures \ref{fig:EpochAccuracy} and \ref{fig:EpochLoss} we can clearly see that after epoch 15 we have a overfitted model, as is when in both figures the train and test lines are starting to take different directions. So we rebuilt the model with 15 epochs.
+
+With all this parametritzations, once built the model we validated with the data saved for that purpose. We obtained an accuracy of \textbf{0.8373}. With this model we can be much more confident of our prediction in comparison to $k$-NN. We have to take into account that CNN is a neural network, and this works well with huge amount of data. So is probable that if we train the model with much more data, the accuracy will be higher.
+
+\section{Evaluation do the results}
+
+The results obtained with a KNN clasifier gave us an improvement comparing it with "flipping a coin" to predict the category. However, the accuracy obtained is not the one that we expected.  Comparing the two models we created, for this project we would clearly choose the CNN one. The best parametrization we found for the CNN gave us a 0.8373 of accuracy, which we conclude that is an acceptable result for this project. 
+
+However, the important thing of this project was not only to obtain a high accuracy, but also to learn the different parts of a CNN and to detect overfitting. We also can affirm that we completed this goal of the project.
+
+\section{Implementation}
+In order to play a little with the model we built, just for fun, we drew som images using the paint application for windows operating systems. We used our model to predict the their category. The images created are the ones shown in Figure \ref{fig:PaintDrawings}:
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{.25\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{./img/1.png}
+      \caption{Aircraft1}
+      \label{fig:Aircraft1}
+    \end{subfigure}
+    \begin{subfigure}{.25\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{./img/2.png}
+        \caption{Aircraft Carrier}
+        \label{fig:AircraftCarrier}
+    \end{subfigure}
+    \begin{subfigure}{.25\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{./img/3.png}
+        \caption{Aircraft2}
+        \label{fig:Aircraft2}
+    \end{subfigure}
+    \begin{subfigure}{.25\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{./img/4.png}
+        \caption{Angel}
+        \label{fig:Angel}
+    \end{subfigure}
+    \begin{subfigure}{.25\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{./img/5.png}
+        \caption{Ambulance}
+        \label{fig:Ambulance}
+    \end{subfigure}
+    \begin{subfigure}{.25\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{./img/6.png}
+        \caption{Ant}
+        \label{fig:Ant}
+    \end{subfigure}
+    \caption{Paint drawnigs}
+    \label{fig:PaintDrawings}
+\end{figure}
+
+
+The Table shows the obtained predictions. Each column represents a image (each letter refers to the letters assigned in Figure \ref{fig:PaintDrawings}). Each row represents the probability the model said of being for a certain category:
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|cccccc|}
+        \hline
+        \textbf{Category} & \textbf{a} & \textbf{b} & \textbf{c} & \textbf{d} & \textbf{e} & \textbf{f} \\
+        \hline
+        Ambulance           & 0.00\% & 0.05\% & 0.12\% & 0.00\% & 100.00\% & 0.00\%   \\ \hline
+        Angel               & 0.00\% & 0.00\% & 0.00\% & 99.97\% & 0.00\% & 0.00\% \\ \hline
+        Aircraft carrier    & 1.49\% & 99.85\% & 12.67\% & 0.00\% & 0.00\% & 0.00\%  \\ \hline
+        Airplane            & 98.51\% & 0.08\% & 84.13\% & 0.00\% & 0.00\% & 0.00\%  \\ \hline
+        Ant                 & 0.00\% & 0.02\% & 3.07\% & 0.03\% & 0.00\% & 100.00\%  \\ \hline
+
+    \end{tabular}
+    \caption{Accuracy obtained respect $k$}
+    \label{tab:knn_results}
+\end{table}
+
 
 \end{document}
