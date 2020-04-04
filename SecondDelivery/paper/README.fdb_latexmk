@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1586005010 "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.tex" "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf" "README" 1586005010
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.aux" 1586005010 4024 36cb0d0179504e6bbacaa21bcb845192 ""
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.tex" 1586005009 11211 7e6022f9414290b46d36e8f6f447bd8a ""
+["pdflatex"] 1586005264 "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.tex" "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf" "README" 1586005265
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.aux" 1586005264 4024 36cb0d0179504e6bbacaa21bcb845192 ""
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.tex" 1586005264 11210 340174bba61b827a9d5e7239a75d2094 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -93,9 +93,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1582115529 4259636 fb1908ce114467804856a89474599392 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "README.aux" 1586005010 4024 36cb0d0179504e6bbacaa21bcb845192 "pdflatex"
-  "README.out" 1586005010 333 e13e21288d5babec7aee1442e6ec82db "pdflatex"
-  "README.tex" 1586005009 11211 7e6022f9414290b46d36e8f6f447bd8a ""
+  "README.aux" 1586005264 4024 36cb0d0179504e6bbacaa21bcb845192 "pdflatex"
+  "README.out" 1586005264 333 e13e21288d5babec7aee1442e6ec82db "pdflatex"
+  "README.tex" 1586005264 11210 340174bba61b827a9d5e7239a75d2094 ""
   "img/1.png" 1581668102 419 82a1d995dff9c513c70d47970b5252fc ""
   "img/2.png" 1581668102 327 316c17e4de56821856873692ee1e4417 ""
   "img/3.png" 1581668102 791 51656acd7979d7845d32156f93373ae1 ""
@@ -105,9 +105,9 @@
   "img/epochs_accuracy.pdf" 1585946344 13141 a914765cba5599ac7b661eca4d517914 ""
   "img/epochs_loss.pdf" 1585946344 11286 6004fd0d8be3e2adba31b8117b6ecfe1 ""
   (generated)
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf"
-  "README.log"
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.log"
-  "README.aux"
-  "README.pdf"
   "README.out"
+  "README.aux"
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.log"
+  "README.log"
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf"
+  "README.pdf"
