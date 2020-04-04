@@ -1,9 +1,9 @@
-PWD /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper
+PWD /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper
 INPUT /usr/local/texlive/2019/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.tex
-OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.log
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.tex
+OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.log
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
@@ -93,21 +93,21 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.aux
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.aux
-OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.aux
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.aux
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.aux
+OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.aux
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.pdf
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.pdf
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+OUTPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -138,40 +138,52 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/./img/Category.png
-INPUT ./img/Category.png
-INPUT ./img/Category.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/epochs_accuracy.pdf
+INPUT ./img/epochs_accuracy.pdf
+INPUT ./img/epochs_accuracy.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/./img/Country.png
-INPUT ./img/Country.png
-INPUT ./img/Country.png
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/./img/PCA_outliers.png
-INPUT ./img/PCA_outliers.png
-INPUT ./img/PCA_outliers.png
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/./img/PCA_no_outliers.png
-INPUT ./img/PCA_no_outliers.png
-INPUT ./img/PCA_no_outliers.png
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.bbl
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.bbl
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.aux
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
-INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/1-FirstReport/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/epochs_loss.pdf
+INPUT ./img/epochs_loss.pdf
+INPUT ./img/epochs_loss.pdf
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/1.png
+INPUT ./img/1.png
+INPUT ./img/1.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/2.png
+INPUT ./img/2.png
+INPUT ./img/2.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/3.png
+INPUT ./img/3.png
+INPUT ./img/3.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/4.png
+INPUT ./img/4.png
+INPUT ./img/4.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/5.png
+INPUT ./img/5.png
+INPUT ./img/5.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/./img/6.png
+INPUT ./img/6.png
+INPUT ./img/6.png
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.aux
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
+INPUT /Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/SecondDelivery/paper/README.out
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
