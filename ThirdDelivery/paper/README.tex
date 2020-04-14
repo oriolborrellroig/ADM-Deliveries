@@ -37,7 +37,7 @@ The Code for this project can be founded here \footnote{Github repository of the
 
 \section{Context}
 \label{Context}
-The tweets obtained are all tweet from 2019 of USA politician's. We have to take into account that Donald Trump (from the Republican party) is the president of USA since January 20, 2017. The Democrat's candidate was Hillary Clinton. The 2019 in USA was a Off-year election.
+The tweets obtained are all tweets from 2019 created by different USA politician's. We have to take into account that Donald Trump (from the Republican party) is the president of USA since January 20, 2017. The 2019 in USA was a Off-year election.
 
 Republicans and Democrats are the two main and historically the largest political parties in the US. After every election, they hold the majority seats in the House of Representatives and the Senate as well as the highest number of Governors.
 
@@ -51,7 +51,7 @@ Before analyze the tweets we applied the following preprocessing steps:
     \item Remove ' from contractions such as I'm and don't
     \item Lowercase the string
     \item Remove https-links from the string
-    \item Tokenize the string with the given pattern
+    \item Tokenize the strings
 \end{itemize}
 
 Once we had the tokens, we computed the frequencies of each token in each party. We created the wordcloud shown in Figure \ref{fig:WordCloud100}.
@@ -66,7 +66,7 @@ Once we had the tokens, we computed the frequencies of each token in each party.
     \label{fig:WordCloud100}
 \end{figure}
 
-Analyzing the results, we observe that the most used words of each party are fairly common words in the field of politicsWe cannot extract any particularity neither from the Democrats nor Republicans.
+Analyzing the results, we observe that the most used words of each party are fairly common words in the field of politics. We cannot extract any particularity neither from the Democrats nor Republicans.
 
 Doing a bit of research I founded a common concept in \textit{Information Retival} called \textit{Term Frequency–Inverse Document Frequency, TFIDF\footnote{TFIDF's Wikipedia page: \url{https://en.wikipedia.org/wiki/Tf-idf}}}. TFIDF is a way to compute the importance a word is in a document. As shown in Equation \ref{eq:TFIDF} is computed using two statics, the \textit{Term Frequency(tf)}, and the \textit{Inverse document frequency(idf)}:
 
@@ -80,7 +80,7 @@ Doing a bit of research I founded a common concept in \textit{Information Retiva
 
 Where $f_{t,d}$ is the frequency of the token \textit{t} in the document \textit{d}, and $N$ is the total number of documents in the collection $D$.
 
-We computed this static for each ford and created another time the wordcloud of each party. The results are shown in Figure \ref{fig:WordCloudTFIDF}
+We computed this static for each word and created another time the wordcloud of each party. The results are shown in Figure \ref{fig:WordCloudTFIDF}
 
 \begin{figure}[H]
     \centering
@@ -98,7 +98,7 @@ The obtained wordclouds are very interesting. We see that the Democrats apparent
 \section{Predicting the party of a tweet}
 \label{CNN}
 
-In order to predict the party of a tweet we trained a Convolutional Newral Network (CNN). We applied the same preprocessing steps mentioned before in order to obtain the tokens. Once obtained the token, I substituted each token with their position in the top used words, or 0 if it's not a frequently used word. With this substitution I obtained continues numerical data that i could send-it to te model.
+In order to predict the party of a tweet we trained a Convolutional Newral Network (CNN). We applied the same preprocessing steps mentioned before in order to obtain the tokens. Once obtained the token, I substituted each token with their position in a top used words ranking, or 0 if it's not a frequently used word. With this substitution I obtained continues numerical data that I could send-it to te model.
 
 About the model, in other deliveries I briefly explained the behavior of a CNN and the different types of layers. I will assume this knowledge is already explained. The following table shows the CNN I designed:
 

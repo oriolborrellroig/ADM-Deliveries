@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1586865818 "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.tex" "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.pdf" "README" 1586865838
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.aux" 1586865818 2360 e630ff332cda0af79e890f827471e8dc ""
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.tex" 1586865838 6886 58d6b57cf4370040fb7865909004c13d ""
+["pdflatex"] 1586879978 "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.tex" "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.pdf" "README" 1586879978
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.aux" 1586879978 2360 e630ff332cda0af79e890f827471e8dc ""
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.tex" 1586879977 6845 b72c3ec6ee1e512ac380f4f2fe18c5a4 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -93,15 +93,15 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1582115529 4259636 fb1908ce114467804856a89474599392 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "README.aux" 1586865818 2360 e630ff332cda0af79e890f827471e8dc "pdflatex"
-  "README.out" 1586865818 284 02b68c9442bbc5ad2320a557863584b1 "pdflatex"
-  "README.tex" 1586865838 6886 58d6b57cf4370040fb7865909004c13d ""
+  "README.aux" 1586879978 2360 e630ff332cda0af79e890f827471e8dc "pdflatex"
+  "README.out" 1586879978 284 02b68c9442bbc5ad2320a557863584b1 "pdflatex"
+  "README.tex" 1586879977 6845 b72c3ec6ee1e512ac380f4f2fe18c5a4 ""
   "img/WordCloud100.pdf" 1586857100 158326 c836c0286b3fe73d31913f2110311569 ""
   "img/WordCloudTFIDF.pdf" 1586857106 182136 8714f7b98a9ebd2968ad5be22661bc28 ""
   (generated)
   "README.aux"
-  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.pdf"
   "README.log"
-  "README.pdf"
   "README.out"
   "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.log"
+  "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.pdf"
+  "README.pdf"
