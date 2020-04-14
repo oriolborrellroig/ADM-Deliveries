@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.19)  13 APR 2020 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.19)  14 APR 2020 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,11 +339,7 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@layouthoffset=\dimen146
 \Gm@layoutvoffset=\dimen147
 \Gm@dimlist=\toks27
-) (/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.aux
-
-LaTeX Warning: Label `tab:knn_results' multiply defined.
-
-)
+) (/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.aux)
 \openout1 = `README.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -440,72 +436,52 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 49.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
 <./img/WordCloud100.pdf, id=30, 574.54652pt x 296.68085pt>
 File: ./img/WordCloud100.pdf Graphic file (type pdf)
 <use ./img/WordCloud100.pdf>
-Package pdftex.def Info: ./img/WordCloud100.pdf  used on input line 61.
+Package pdftex.def Info: ./img/WordCloud100.pdf  used on input line 63.
 (pdftex.def)             Requested size: 377.62642pt x 194.99962pt.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<./img/WordCloudTFIDF.pdf, id=46, 574.54652pt x 296.68085pt>
+<./img/WordCloudTFIDF.pdf, id=54, 574.54652pt x 296.68085pt>
 File: ./img/WordCloudTFIDF.pdf Graphic file (type pdf)
 <use ./img/WordCloudTFIDF.pdf>
-Package pdftex.def Info: ./img/WordCloudTFIDF.pdf  used on input line 87.
+Package pdftex.def Info: ./img/WordCloudTFIDF.pdf  used on input line 89.
 (pdftex.def)             Requested size: 377.62642pt x 194.99962pt.
  [2 <./img/WordCloud100.pdf> <./img/WordCloudTFIDF.pdf
 
 pdfTeX warning: pdflatex (file ./img/WordCloudTFIDF.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-
-LaTeX Warning: Reference `fig:EpochAccuracy' on page 3 undefined on input line 149.
-
-
-LaTeX Warning: Reference `fig:EpochLoss' on page 3 undefined on input line 149.
-
-[3]
-
-LaTeX Warning: Reference `fig:PaintDrawings' on page 4 undefined on input line 160.
-
-
-LaTeX Warning: Reference `fig:PaintDrawings' on page 4 undefined on input line 163.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `README.out' has not changed.
-(rerunfilecheck)             Checksum: DC310CF46F0BE74E3E1511825B9E3158;353.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+(rerunfilecheck)             Checksum: 02B68C9442BBC5AD2320A557863584B1;284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 10339 strings out of 492616
- 155917 string characters out of 6129481
- 275626 words of memory out of 5000000
- 14136 multiletter control sequences out of 15000+600000
- 10397 words of font info for 38 fonts, out of 8000000 for 9000
+ 10338 strings out of 492616
+ 155889 string characters out of 6129481
+ 270639 words of memory out of 5000000
+ 14134 multiletter control sequences out of 15000+600000
+ 10565 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,40p,783b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.pdf" (4 pages, 483658 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "/Users/oriolborrellroig/Documents/MASTER DS/Q2/ADM/ADM-Deliveries/ThirdDelivery/paper/README.pdf" (3 pages, 505613 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  16 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
